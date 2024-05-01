@@ -1,0 +1,476 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&family=Shippori+Antique+B1&family=Shizuru&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family : 'Oswald', sans-serif;
+    scroll-behavior: smooth;
+}
+p
+{
+    font-weight: 300;
+    color: #111;
+}
+.banner
+{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(images/Home\ Page.jpg);
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.20);
+}
+.banner .content
+{
+    max-width: 700px;
+    text-align: center;
+}
+.banner .content img
+{
+    max-width: 600px;
+    height: 100%;
+    align-items: center;
+    transition: 30s;
+}
+header
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 40px 100px;
+    z-index: 10000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 2s;
+}
+header.sticky
+{
+    background: lightslategray;
+    padding: 10px 80px;
+}
+header .logo
+{
+   top: 15px;
+}
+header .logo img
+{ 
+    min-width: 180px;
+    max-height:80px;
+    object-fit: cover;
+}
+header.sticky .logo
+{
+    width: 290px;
+    height: 65px;
+}
+header .navigation
+{
+    position: relative;
+    display: flex;
+}
+header .navigation li
+{
+    list-style: none;
+    margin-left: 30px;
+}
+header .navigation li a
+{
+    text-decoration: none;
+    color: #fff;
+}
+header.sticky .navigation li a
+{
+    color: #ffff;
+}
+header .navigation li a:hover
+{
+    color: firebrick;
+}
+.about
+{
+    
+    background: url(/images/aboutSigga.jpg);
+
+}
+section
+{
+    padding:15vh;
+    width: 100%;
+    background-image:linear-gradient(to bottom right, rgba(42, 42, 54, 0.589),rgba(7, 7, 7, 0.829));
+    background-size: cover;
+}
+.row
+{
+    position: relative;
+    width: 1130px;
+    max-width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.row .col50
+{
+    position: relative;
+    width: 48%;
+}
+.titleText
+{
+    color: #fff;
+    font-size: 1.5em;
+    font-weight: bolder;
+
+}
+.titleText span
+{
+    color: #daa520;
+    font-weight: 700;
+    font-size: 1.8em;
+}
+.titleTan
+{
+    color: #fff;
+    font-size: 1.3em;
+    font-weight: bolder;
+
+}
+.titleTan span
+{
+    color: #daa520;
+    font-weight: 700;
+    font-size: 1.5em;
+}
+.row .col50 p
+{
+    color: #fff;
+    font-size: 1.1em;
+}
+.row .col50 .imgBx
+{
+    position: relative;
+    width: 100%;
+    min-height: 400px;
+    height: 100%;
+}
+.row .col50 .imgBx img
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 600px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 5px;
+}
+.title
+{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 1.5em;
+}
+.title p
+{
+    color: #fff;
+    font-weight: 600;
+    font-size: 1em;
+}
+#team
+{
+    background: url(images/team.jpg);
+    background-size: cover;
+}
+#team{
+    text-align: center;
+}
+#team .pro-container{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 30px;
+    flex-wrap: wrap;
+}
+
+#team .pro{
+    width: 22%;
+    min-width: 180px;
+    padding: 10px 12px;
+    border: 1px solid #cce7d0;
+    border-radius: 25px;
+    cursor: pointer;
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.02) ;
+    margin: 15px 0;
+    background-color: transparent;
+    transition: 0.2s ease;
+}
+#team .pro:hover{
+    box-shadow: 20px 20px 30px rgba(34, 32, 163, 0.06);
+}
+#team .pro img{
+    width: 100%;
+    border-radius: 20px;
+}
+.text p{
+    color: whitesmoke;
+    font-size: 20px;
+    font-weight: bold;
+}
+.text h2{
+    color: whitesmoke;
+}
+#team .pro .text{
+    text-align: center;
+    padding: 10px 0;
+}
+.production
+{
+    overflow: hidden;
+}
+.production .content
+{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-top: 40px;
+}
+
+.production .content .box
+{
+    width: 310px;
+    margin: 15px;
+}
+.tale li{
+    list-style: none;
+    color: white;
+}
+.tale{
+    position: relative;
+    display: inline-flex;
+    
+}
+
+.production .content .box .imgBx
+{
+    position: relative;
+    width: 100%;
+    height: 350px;
+}
+.production .content .box .imgBx img
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 90%;
+    height: 100%;
+    object-fit: center;
+}
+.production .content .box .text
+{
+    padding: 8px 0 5px;
+}
+.production .content .box .text h3
+{
+    font-weight: 500;
+    color: #fff;
+} 
+.contact
+{
+    background: url(images/Contact\ Us.jpg);
+    background-size: cover;
+}
+.socials
+{
+    padding: 75px 50px;
+    background: transparent;
+    box-shadow: 0 15px 50px rgba(0, 0, 0, 0.05);
+    max-width: 500px;
+    min-height: 50px;
+    margin-top : 30px;
+    border-radius: 15px;
+    justify-content: space-between;
+}
+.titleK{
+    color: white;
+    font-size: 1.4em;
+    font-weight: bold;
+}
+.fa 
+{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 1.7em;
+    padding: 5px;
+
+}
+.socials .fa li 
+{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 1em;
+    list-style: none;
+    color: white;
+}
+.socials .fa li a
+{   
+    text-decoration: none;
+    color: white;
+}
+.socials .fa li a:hover
+{   
+    color: peru;
+}
+.copyrightsText
+{
+    padding: 8px 40px;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+.copyrightsText p
+{
+    color: #ba160c
+}
+.copyrightsText a
+{
+    color: #ff0157;
+    font-weight: 700;
+    text-decoration: none;
+}
+@media (max-width : 991px){
+    header,
+    header.sticky
+    {
+
+        padding: 5px 15px;
+    }
+    header .navigation
+    {
+        display: none;
+    }
+    header .navigation.active
+    {
+        width: 100%;
+        height: calc(100% - 68px);
+        position: fixed;
+        top: 68px;
+        left: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background: #E55D87;
+        background: -webkit-linear-gradient(to right, #5FC3E4, #E55D87);
+        background: linear-gradient(to right, #5FC3E4, #E55D87);
+    }
+    header.navigation li
+    {
+        margin-left: 0;
+    }
+    header .navigation li a
+    {
+        color: #004d00;
+        font-size: 1.9em;
+    }
+    .menuToggle
+    {
+        position: relative;
+        width: 40px;
+        height: 40px;
+        background: url(images/menu.png);
+        background-size: 30px;
+        background-repeat: no-repeat;
+        background-position: center;
+        cursor: pointer;
+    }
+    .menuToggle.active
+    {
+        background: url(images/close.png);
+        background-size: 25px;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    header.sticky.menuToggle
+    {
+        filter: invert(1);
+    }
+    section
+    {
+        padding: 5vh;
+    }
+    .row
+    {
+        flex-direction: column;
+    }
+    .row .col50
+    {
+        position: relative;
+        width: 100%;
+    }
+    .row .col50 .imgBx
+    {
+        height: 300px;
+        margin-top: 20px;
+    }
+    .production .content
+    {
+        margin-top: 20px;
+    }
+
+    .production .content .box
+    {
+        margin: 10px;
+    }
+
+    .production .content .box .imgBx
+    {
+        height: 260px;
+    }
+    #team .pro-content .pro
+    {
+        background: transparent;
+        margin: 10px;
+        padding: 50px;
+        justify-content: center;
+    }
+    #team p{
+        color: #fff;
+    }
+    .text h3{
+        color: #fff;
+    }
+    .socials
+    {
+        background: transparent;
+        padding: 35px 40px;
+        margin-top: 20px;
+        margin-bottom: 30px;
+    }
+    .socials .fa li 
+    {
+        font-size: 0.7em;
+    }
+}    
+@media (max-width : 480px)
+{
+    .banner .content img
+    {
+        max-width: 50px;
+        height: 50%;
+    }
+    header .logo img
+    { 
+        min-width: 80px;
+        max-height:40px;
+        object-fit: cover;
+    }
+    header.sticky .logo
+    {
+        width: 90px;
+        height: 35px;
+    }
+}
